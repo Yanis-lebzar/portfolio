@@ -1,0 +1,22 @@
+@font-face {
+  font-family: SF-Pro;
+  src: url("./fonts/SF-Pro-Display-Regular.otf") format("openType");
+}
+
+body {
+  margin: 0;
+  font-family: SF-Pro, Montserrat, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+li {
+  list-style: none;
+}
+h3 {
+  margin: 0;
+  font-family: montserrat;
+  font-weight: 500;
+  font-size: 40px;
+}
