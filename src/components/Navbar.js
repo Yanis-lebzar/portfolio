@@ -1,9 +1,26 @@
 import React from "react";
 import styled from "styled-components";
+import { motion, useCycle } from "framer-motion"
+
+const navVariants ={
+  hidden:{
+    y:"-50vh",
+    opacity:0,
+  },
+  visible: {
+    y:0,
+    opacity:1,
+    transition:{
+      delay:7,
+      duration:1
+
+    }
+  }
+}
 
 function Navbar() {
   return (
-    <WrapperNav>
+    <WrapperNav as={motion.div} variants={navVariants} initial="hidden" animate="visible">
       <h3>Yanis Lebzar</h3>
       <WrapperLinks>
         <ul>
